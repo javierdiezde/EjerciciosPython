@@ -2,18 +2,18 @@
 # El programa nos pide que lo averigüemos introduciendo sucesivamente códigos.
 # El programa sólo responde cuantos números aparecen y cuántos están en su posición correcta.
 import random
-secreto = str(random.randrange(999))
+secreto = str(random.randrange(9999))
 print (secreto)
-# secreto = input('Introduce el código de 3 cifras: ')
+# secreto = input('Introduce el código de 4 cifras: ')
 contador = 0
 intento = input('Averigua el código: ')
-while  len(intento)!=3 or intento.isdigit()!= True:
-    if len(intento)<3:
+while  len(intento)!=4 or intento.isdigit()!= True:
+    if len(intento)<4:
         print('pocas cifras')
-    elif len(intento)>3:
+    elif len(intento)>4:
         print('muchas cifras')
     elif intento.digit()!= True:
-        print('Tiene que tener sólo 3 números enteros')
+        print('Tiene que tener sólo 4 números enteros')
     intento = input ('Vuelve a introducir tu código: ')
 print ('por fin lo has escrito bien...')
 contador += 1

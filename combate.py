@@ -15,14 +15,19 @@ for i in range(1,veces):
     
     sumamonstruos = monstruogrande + monstruomediano
     
-    if sumamonstruos >= sumasoldados:
+    if sumamonstruos > sumasoldados:
         ganamonstruos = ganamonstruos + 1
-    else:
+    elif sumamonstruos < sumasoldados:
         ganasoldados = ganasoldados + 1
+    else:
+        ganasoldados += .5
+        ganamonstruos += .5
     print(sumamonstruos,sumasoldados,ganamonstruos,ganasoldados)
 relativamonstruos = ganamonstruos / veces
 relativasoldados = ganasoldados / veces
 
-print('Con %d combates 2 monstruos contra %e soldados sale que los mosntruos tienen una frecuencia relativa de: ',veces,numerosoldados,relativamonstruos)
+print('Con ',veces,' combates 2 monstruos contra ',numerosoldados, ' soldados sale que los monstruos tienen una frecuencia relativa de:  ',relativamonstruos)
+print( 'Los soldados ganan con una frecuencia de: ', relativasoldados)
+
 
     

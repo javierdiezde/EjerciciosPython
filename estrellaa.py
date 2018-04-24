@@ -33,6 +33,3 @@ for i in range(5,21,2):
     pepe.goto(x,y)
     pepe.pendown()
     estrella(i,long)
-
-
-        
